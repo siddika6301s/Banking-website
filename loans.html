@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loans | AYESHA BANK</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+
+        <span class="logo-icon">
+    <img src="images/logo.png" alt="Ayesha Bank Logo">
+</span>
+
+        <div>
+            <h1>AYESHA BANK</h1>
+            <p>Your Financial Journey, Our Commitment.</p>
+        </div>
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="accounts.html">Accounts & Services</a>
+        <a href="internet-banking.html">Internet Banking</a>
+        <a href="loans.html" class="active">Loans</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<section class="page-hero loans-hero">
+
+    <div class="page-hero-content">
+
+        <span>LOANS & FINANCING</span>
+
+        <h2>
+            Helping You Achieve
+            <strong>Your Dreams</strong>
+        </h2>
+
+        <p>
+            Explore flexible financing solutions designed
+            for your personal, educational and lifestyle goals.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="loan-intro">
+
+    <div class="loan-intro-image">
+
+        <img src="images/bankloan-services.jpg"
+             alt="Bank loan services">
+
+    </div>
+
+    <div class="loan-intro-content">
+
+        <span>FINANCIAL SUPPORT</span>
+
+        <h2>
+            A Loan For Every Important Goal
+        </h2>
+
+        <p>
+            Whether you are planning a new home, higher
+            education, a vehicle or a personal expense,
+            AYESHA BANK provides convenient financing
+            options.
+        </p>
+
+        <a href="#loanTypes" class="btn gold-btn">
+            Explore Loans
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="loan-section" id="loanTypes">
+
+    <div class="section-heading">
+
+        <span>OUR LOAN PRODUCTS</span>
+
+        <h2>Choose The Right Loan</h2>
+
+    </div>
+
+
+    <div class="loan-container">
+
+        <div class="loan-card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Personal Loan</h3>
+
+            <p>
+                Financial support for planned personal
+                expenses and important needs.
+            </p>
+
+            <div class="loan-info">
+                <span>Flexible Tenure</span>
+                <span>Quick Process</span>
+            </div>
+
+            <a href="contact.html">Apply Now →</a>
+
+        </div>
+
+
+        <div class="loan-card">
+
+            <i class="fa-solid fa-house"></i>
+
+            <h3>Home Loan</h3>
+
+            <p>
+                Make your dream of owning a home a
+                reality with suitable financing.
+            </p>
+
+            <div class="loan-info">
+                <span>Long Tenure</span>
+                <span>Easy Planning</span>
+            </div>
+
+            <a href="contact.html">Apply Now →</a>
+
+        </div>
+
+
+        <div class="loan-card">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h3>Education Loan</h3>
+
+            <p>
+                Support higher education and invest
+                in a brighter future.
+            </p>
+
+            <div class="loan-info">
+                <span>Student Support</span>
+                <span>Flexible Options</span>
+            </div>
+
+            <a href="contact.html">Apply Now →</a>
+
+        </div>
+
+
+        <div class="loan-card">
+
+            <i class="fa-solid fa-car"></i>
+
+            <h3>Vehicle Loan</h3>
+
+            <p>
+                Finance your vehicle purchase with
+                convenient repayment options.
+            </p>
+
+            <div class="loan-info">
+                <span>Flexible Tenure</span>
+                <span>Easy Repayment</span>
+            </div>
+
+            <a href="contact.html">Apply Now →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="emi-section">
+
+    <div class="emi-content">
+
+        <span>PLAN YOUR REPAYMENT</span>
+
+        <h2>EMI Calculator</h2>
+
+        <p>
+            Use this educational calculator to estimate
+            your monthly loan repayment.
+        </p>
+
+    </div>
+
+
+    <div class="emi-box">
+
+        <label>Loan Amount (₹)</label>
+
+        <input type="number"
+               id="loanAmount"
+               value="500000">
+
+
+        <label>Annual Interest Rate (%)</label>
+
+        <input type="number"
+               id="interestRate"
+               value="9"
+               step="0.1">
+
+
+        <label>Loan Tenure (Years)</label>
+
+        <input type="number"
+               id="loanTenure"
+               value="5">
+
+
+        <button onclick="calculateEMI()"
+                class="login-btn">
+            Calculate EMI
+        </button>
+
+
+        <div class="emi-result">
+
+            <span>Estimated Monthly EMI</span>
+
+            <strong id="emiResult">
+                ₹ 0
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="loan-image-section">
+
+    <img src="images/financial-planning.jpg"
+         alt="Financial planning">
+
+    <div>
+
+        <span>PLAN WITH CONFIDENCE</span>
+
+        <h2>
+            Take The Next Step Towards Your Goals
+        </h2>
+
+        <p>
+            Understand your financial requirements,
+            choose a suitable option and contact our
+            support team for more information.
+        </p>
+
+        <a href="contact.html" class="btn gold-btn">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-brand">
+
+        <h2>AYESHA BANK</h2>
+
+        <p>Your Financial Journey, Our Commitment.</p>
+
+    </div>
+
+    <div class="footer-links">
+
+        <h3>Quick Links</h3>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="accounts.html">Accounts</a>
+        <a href="loans.html">Loans</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="footer-contact">
+
+        <h3>Contact Us</h3>
+
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            1800-123-4567
+        </p>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            support@ayeshabank.example
+        </p>
+
+    </div>
+
+</footer>
+
+<div class="copyright">
+    © 2026 AYESHA BANK. All Rights Reserved.
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
